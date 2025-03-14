@@ -1,3 +1,4 @@
+"use client"
 import { useState, useEffect } from "react";
 import ChartComponent from "./ChartComponent";
 
@@ -63,7 +64,7 @@ export default function Home() {
                     <p className="font-semibold">Total Doctors: {stats.total_doctors}</p>
                     <p className="font-semibold">Avg. Usage Time: {stats.average_usage_time.toFixed(2)} min</p>
                     <p className="font-semibold">Survey Participation: {(stats.survey_participation_rate * 100).toFixed(2)}%</p>
-                    <p className="font-semibold text-green-600">Model Accuracy: {(stats.model_accuracy * 100).toFixed(2)}%</p>
+                   
                 </div>
             )}
             <div className="mt-6 p-4 bg-white shadow rounded-lg flex flex-col items-center">
